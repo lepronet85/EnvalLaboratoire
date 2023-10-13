@@ -4,5 +4,5 @@ signout.addEventListener("click", (e) => {
   e.preventDefault();
   localStorage.setItem("status", "disconnected");
 
-  window.location = `${window.location.origin}/index.html`;
+  window.location = `index.html`;
 });

@@ -105,7 +105,7 @@ function checkConnexion(email, password) {
       );
     }
   } else {
-    window.location = `${window.location.origin}/dashboard.html`;
+    window.location = `dashboard.html`;
     localStorage.setItem("tryTimes", 0);
     localStorage.setItem("status", "connected");
   }

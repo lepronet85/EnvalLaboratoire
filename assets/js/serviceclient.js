@@ -4,8 +4,7 @@ function getUserInfos() {
 
 const status = localStorage.getItem("status");
 
-if (status === "disconnected")
-  window.location = `${window.location.origin}/index.html`;
+if (status === "disconnected") window.location = `index.html`;
 
 const profileAvatar = document.getElementById("profile-avatar");
 const userInfos = getUserInfos();
