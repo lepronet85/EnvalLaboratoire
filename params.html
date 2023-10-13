@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/params.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidenav -->
+      <div class="sidenav">
+        <div class="sidenav__logo-section">
+          <img src="assets/images/logo.png" alt="logo" class="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="dashboard.html">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html">
+                <i class="fa-solid fa-peace"></i>
+                <span>Facture</span>
+              </a>
+            </li>
+            <li>
+              <a href="command.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Commande</span>
+              </a>
+            </li>
+            <li>
+              <a href="suivi.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Suivi</span>
+              </a>
+            </li>
+            <li>
+              <a href="serviceclient.html">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Service client</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="active">
+              <a href="params.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Paramètres du compte</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Déconnexion</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Sidenav -->
+      <!-- Main section -->
+      <div class="main-section">
+        <header>
+          <div class="header__menu-icon">
+            <a href="">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div class="header__right-icons">
+            <div>
+              <a href="">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </div>
+            <a href="">
+              <img id="profile-avatar" src="assets/images/avatar.jpg" alt="" />
+            </a>
+          </div>
+        </header>
+        <main>
+          <div class="table-container">
+            <h1>Paramètredu compte</h1>
+            <div class="top-actions-btn-container">
+              <a href="dashboard.html" class="back"
+                ><i class="fa-solid fa-arrow-left"></i>
+                Retour au tableau de board
+              </a>
+              <div class="">
+                <a id="edit-password">Modifier le mot de passe</a>
+                <a id="delete-account">Supprimer le compte</a>
+              </div>
+            </div>
+            <div class="user-infos-container">
+              <div class="user-infos-fields">
+                <h2>Modifier le profil</h2>
+                <form action="">
+                  <div class="input-container">
+                    <label for="name">Nom</label>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="John Doe"
+                        id="name"
+                        name="name"
+                        class="sujet"
+                      />
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="johndoe@gmail.com"
+                      class="sujet"
+                    />
+                  </div>
+                  <label for="">Biographie</label>
+                  <div>
+                    <textarea id="markdown-editor">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur tempore vero minus enim facere dignissimos corporis reprehenderit. Odit a nam doloremque aperiam quas animi possimus officiis tenetur, quae deleniti.</textarea
+                    >
+                  </div>
+                  <a href="" id="save">Envoyer</a>
+                </form>
+              </div>
+              <di class="avatar-container">
+                <h3>Ton avatar</h3>
+                <div class="avatar-img-container">
+                  <img src="assets/images/avatar.jpg" id="avatar" alt="" />
+                </div>
+                <input
+                  type="file"
+                  id="file-input"
+                  accept="image/*"
+                  style="display: none"
+                />
+                <a href="" id="edit-photo">Modifier la photo</a>
+                <a href="" id="remove-photo">Supprimer la photo</a>
+              </di>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- Main section -->
+      <div id="notification">
+        <div id="notification-title"></div>
+        <div id="notification-message"></div>
+      </div>
+
+      <div id="modal-container">
+        <div id="modal">
+          <div class="modal-header">Modifier le mot de passe</div>
+          <div class="modal-body">
+            <form action="">
+              <label for="old-password">Ancien mot de passe</label>
+              <input
+                type="password"
+                name="old-password"
+                id="old-password"
+                class="sujet"
+              />
+              <label for="new-password">Nouveau mot de passe</label>
+              <input
+                type="password"
+                name="new-password"
+                id="new-password"
+                class="sujet"
+              />
+              <label for="confirm-password">Confirmation</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                class="sujet"
+              />
+              <a href="" id="save-password">Sauvegarder</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+    <script src="./assets/js/params.js"></script>
+  </body>
+</html>

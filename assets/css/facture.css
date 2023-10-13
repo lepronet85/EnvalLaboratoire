@@ -1,0 +1,147 @@
+table {
+  width: 100%;
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid var(--gray);
+  border-left: none;
+  color: var(--gray);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fac1 {
+  font-size: 25px;
+  text-align: start;
+  padding-left: 10px;
+  border: 1px solid;
+  border: none;
+}
+.teste4 {
+  border: none;
+  padding-top: 10px;
+}
+.recher {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px;
+}
+.input {
+  width: 40%;
+  background-color: #cccccc84;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+.input i {
+  font-size: 1.5em;
+  color: var(--gray);
+}
+.teste {
+  width: 8%;
+}
+.teste-1 {
+  width: 10%;
+}
+.teste2 {
+  width: 30%;
+  padding: 10px 0 10px 0;
+}
+.submit {
+  height: 30px;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #1898a8;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  background-color: white;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 15px;
+  padding: 40px 20px;
+}
+
+table {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+table td,
+table th {
+  padding: 20px;
+  width: 25% !important;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: none;
+}
+table tr:last-child,
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:hover {
+  background-color: #cccccc84;
+}
+table a {
+  background-color: var(--light-blue);
+  border: none;
+  color: white;
+  padding: 7px 35px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid var(--light-blue);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+table a:hover {
+  background-color: white;
+  color: var(--light-blue);
+}
+.table-title-container h1 {
+  color: var(--gray);
+}
+.table-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-container {
+  overflow-x: auto;
+}
+
+table thead tr:first-child {
+  background-color: #1898a8;
+  user-select: none;
+}
+table tr:first-child th {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  table {
+    min-width: 500px;
+  }
+  .table-title-container {
+    flex-direction: column;
+  }
+  main {
+    margin-left: 5px;
+  }
+}

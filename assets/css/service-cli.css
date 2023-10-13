@@ -1,0 +1,41 @@
+main {
+    background-color: white;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 15px;
+    padding: 40px 20px;
+    color: var(--gray);
+}
+
+.sujet{
+    height: 30px;
+    width: 99%;
+    border-radius: 7px;
+    border: none;
+    background-color: #cccccc84;
+    padding: 4px 8px;
+    margin: 10px auto;
+}
+.sujet:focus, .press:focus {
+    outline-color: var(--light-green);
+}
+.press{
+    height: 500px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #cccccc84;
+    margin: 10px auto;
+    padding: 10px 8px;
+}
+.submit{
+    width: 100%;
+    border-radius: 7px;
+    font-size:  18px;
+    color: white;
+    background-color: #1898A8;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px auto;
+}

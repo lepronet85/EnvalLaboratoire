@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/suivi.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidenav -->
+      <div class="sidenav">
+        <div class="sidenav__logo-section">
+          <img src="assets/images/logo.png" alt="logo" class="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="dashboard.html">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html">
+                <i class="fa-solid fa-peace"></i>
+                <span>Facture</span>
+              </a>
+            </li>
+            <li>
+              <a href="command.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Commande</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="suivi.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Suivi</span>
+              </a>
+            </li>
+            <li>
+              <a href="serviceclient.html">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Service client</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="params.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Paramètres du compte</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" id="signout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Déconnexion</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Sidenav -->
+      <!-- Main section -->
+      <div class="main-section">
+        <header>
+          <div class="header__menu-icon">
+            <a href="">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div class="header__right-icons">
+            <div>
+              <a href="">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </div>
+            <a href="">
+              <img id="profile-avatar" src="assets/images/avatar.jpg" alt="" />
+            </a>
+          </div>
+        </header>
+        <main>
+          <div class="table-title-container">
+            <h1 style="text-align: left">Suivi</h1>
+            <div class="input">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="recher" id="search" />
+            </div>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th class="teste-1 sort-element">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      Lot<span style="margin-left: 10px; display: none"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 320 512"
+                          fill="#fff"
+                          style="font-size: 10px"
+                        >
+                          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path
+                            d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </th>
+                  <th class="sort-element">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      Etat<span style="margin-left: 10px; display: none"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 320 512"
+                          fill="#fff"
+                          style="font-size: 10px"
+                        >
+                          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path
+                            d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </th>
+                  <th class="teste sort-element">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      Date prévue<span style="margin-left: 10px; display: none"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 320 512"
+                          fill="#fff"
+                          style="font-size: 10px"
+                        >
+                          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path
+                            d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </th>
+                  <th class="teste sort-element">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      Rapport<span style="margin-left: 10px; display: none"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 320 512"
+                          fill="#fff"
+                          style="font-size: 10px"
+                        >
+                          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                          <path
+                            d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </th>
+                  <th class="teste2 sort-element">
+                    Cliquez pour voir le rapport
+                  </th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+      <!-- Main section -->
+    </div>
+    <script src="./assets/js/suiviData.js"></script>
+    <script src="./assets/js/suivi.js"></script>
+    <script src="./assets/js/signout.js"></script>
+  </body>
+</html>

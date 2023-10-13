@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidenav -->
+      <div class="sidenav">
+        <div class="sidenav__logo-section">
+          <img src="assets/images/logo.png" alt="logo" class="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li class="active">
+              <a href="dashboard.html">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html">
+                <i class="fa-solid fa-peace"></i>
+                <span>Facture</span>
+              </a>
+            </li>
+            <li>
+              <a href="command.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Commande</span>
+              </a>
+            </li>
+            <li>
+              <a href="suivi.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Suivi</span>
+              </a>
+            </li>
+            <li>
+              <a href="serviceclient.html">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Service client</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="params.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Paramètres du compte</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" id="signout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Déconnexion</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Sidenav -->
+      <!-- Main section -->
+      <div class="main-section">
+        <header>
+          <div class="header__menu-icon">
+            <a href="">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div class="header__right-icons">
+            <div>
+              <a href="">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </div>
+            <a href="">
+              <img id="profile-avatar" src="assets/images/avatar.jpg" alt="" />
+            </a>
+          </div>
+        </header>
+        <main>
+          <div class="main__cards-container">
+            <div class="bolt-card-container">
+              <h2>Analyses positives</h2>
+              <div class="bolt-card">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Positif</span>
+                <div class="circular-progress-conainer">
+                  <canvas id="bolt-chart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="droplet-card-container">
+              <h2>Analyses negatives</h2>
+              <div class="droplet-card">
+                <div>
+                  <i class="fa-solid fa-droplet"></i>
+                </div>
+                <span>Negatif</span>
+                <div class="circular-progress-conainer">
+                  <canvas id="droplet-chart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__bar-chart-container">
+            <h2>Analyses par mois</h2>
+            <div>
+              <canvas id="bar"></canvas>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- Main section -->
+    </div>
+    <script src="assets/vendor/chartjs/chart.umd.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

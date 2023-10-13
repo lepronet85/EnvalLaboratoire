@@ -1,0 +1,224 @@
+main {
+  background-color: white;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 15px;
+  padding: 10px 20px 20px;
+  color: var(--gray);
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.top-actions-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-actions-btn-container a.back {
+  color: var(--light-green);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.top-actions-btn-container a.back:hover {
+  font-size: 15px;
+}
+
+.top-actions-btn-container a.back i {
+  margin-right: 5px;
+}
+
+#edit-password {
+  background-color: var(--light-blue);
+  color: #fff;
+  padding: 8px 18px;
+  margin-right: 40px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#delete-account {
+  background-color: #ee0909;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-infos-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.user-infos-fields {
+  width: 60%;
+}
+
+.user-infos-fields form,
+.user-infos-fields .input-container {
+  width: 100%;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+.sujet {
+  height: 30px;
+  width: 97%;
+  border-radius: 7px;
+  border: none;
+  background-color: #cccccc84;
+  padding: 4px 8px;
+  margin: 10px auto;
+}
+.sujet:focus,
+.press:focus {
+  outline-color: var(--light-green);
+}
+
+.user-infos-container h2 {
+  font-size: 18px;
+}
+
+.EasyMDEContainer {
+  background-color: #cccccc84;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.CodeMirror,
+.editor-toolbar {
+  border: none;
+  background-color: transparent;
+}
+
+.avatar-container {
+  width: 40%;
+}
+
+.avatar-container img {
+  width: 100%;
+}
+
+#remove-photo,
+#edit-photo,
+#save,
+#save-password {
+  background-color: var(--light-blue);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+#remove-photo {
+  background-color: #ee0909;
+}
+
+#save {
+  margin: 5px 0;
+}
+
+.avatar-img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+}
+
+.container {
+  position: relative;
+}
+
+#notification {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  background-color: #fff;
+  border: 2px solid #1898a8;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 999;
+}
+
+#notification-title {
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1898a8;
+}
+
+#notification-message {
+  padding: 20px 5px;
+  color: #79b51c;
+  text-align: center;
+}
+
+#modal-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#modal {
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid #1898a8;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#modal .modal-header {
+  background-color: #1898a8;
+  color: #fff;
+  padding: 7px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#modal .modal-body {
+  padding: 5px;
+}
+
+#modal .modal-body form {
+  margin-top: 10px;
+}
+
+#modal .modal-body label {
+  display: block;
+  margin: 10px auto;
+  color: gray;
+}
+
+#modal .modal-body input {
+  width: 95%;
+}
+
+#save-password {
+  margin: 10px auto;
+}

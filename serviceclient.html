@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/service-cli.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidenav -->
+      <div class="sidenav">
+        <div class="sidenav__logo-section">
+          <img src="assets/images/logo.png" alt="logo" class="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="dashboard.html">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html">
+                <i class="fa-solid fa-peace"></i>
+                <span>Facture</span>
+              </a>
+            </li>
+            <li>
+              <a href="command.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Commande</span>
+              </a>
+            </li>
+            <li>
+              <a href="suivi.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Suivi</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="serviceclient.html">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Service client</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="params.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Paramètres du compte</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" id="signout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Déconnexion</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Sidenav -->
+      <!-- Main section -->
+      <div class="main-section">
+        <header>
+          <div class="header__menu-icon">
+            <a href="">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div class="header__right-icons">
+            <div>
+              <a href="">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </div>
+            <a href="">
+              <img id="profile-avatar" src="assets/images/avatar.jpg" alt="" />
+            </a>
+          </div>
+        </header>
+        <main>
+          <div class="table-container">
+            <div class="header">
+              <label for="sujet">Sujet</label><br />
+              <input type="text" name="sujet" class="sujet" />
+            </div>
+            <div class="main">
+              <label for="press">Message</label><br />
+              <textarea class="press" name="Message"></textarea><br />
+            </div>
+            <div class="footer">
+              <input type="submit" class="submit" value="Envoyer" />
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- Main section -->
+    </div>
+    <script src="./assets/js/serviceclient.js"></script>
+    <script src="./assets/js/signout.js"></script>
+  </body>
+</html>

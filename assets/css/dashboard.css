@@ -1,0 +1,142 @@
+main {
+  padding: 20px 40px 20px;
+}
+.main__cards-container {
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  color: var(--gray);
+}
+.bolt-card-container h2,
+.droplet-card-container h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.bolt-card-container,
+.droplet-card-container {
+  width: 30%;
+}
+/* .bolt-card-container canvas,
+.bolt-card-droplet canvas {
+  width: 100%;
+} */
+.main__cards-container .bolt-card {
+  height: 300px;
+  background-color: var(--light-blue);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.main__cards-container .droplet-card {
+  background-color: white;
+  border-radius: 15px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid var(--light-blue);
+}
+.main__cards-container .bolt-card i {
+  color: white;
+  font-size: 2em;
+}
+.main__cards-container .bolt-card span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.main__cards-container .droplet-card i {
+  color: var(--light-blue);
+  font-size: 2em;
+  transform: scaleX(-1);
+}
+.main__cards-container .droplet-card span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main__cards-container .droplet-card div:first-child {
+  background-color: rgba(24, 151, 168, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__cards-container .bolt-card div:last-child,
+.main__cards-container .droplet-card div:last-child {
+  position: relative;
+}
+.main__cards-container .bolt-card div:last-child::before,
+.main__cards-container .droplet-card div:last-child::before {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 700;
+  top: 40%;
+  left: 40%;
+}
+.main__cards-container .bolt-card div:last-child::before {
+  color: white;
+  content: "91%";
+}
+.main__cards-container .droplet-card div:last-child::before {
+  content: "50%";
+}
+.main__bar-chart-container {
+  width: 70%;
+}
+.main__bar-chart-container h2 {
+  color: var(--gray);
+  margin: 80px 40px;
+}
+.main__bar-chart-container div canvas {
+  height: 300px;
+}
+
+
+
+
+@media screen and (max-width: 985px) {
+  .bolt-card-container,
+  .droplet-card-container {
+    width: 45%;
+  }
+  .main__bar-chart-container {
+    width: 90%;
+  }
+  .main__cards-container {
+    gap: 50px;
+  }
+}
+
+/* Tablette */
+
+@media screen and (max-width: 768px) {
+  
+}
+
+/* Tablette */
+
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+  .main__cards-container {
+    flex-direction: column;
+  }
+  .bolt-card-container,
+  .droplet-card-container {
+    width: 100%;
+  }
+  .main__bar-chart-container {
+    width: 98%;
+  }
+}
+
+
+/* Mobile */

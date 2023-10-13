@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  min-height: 90vh;
+  margin: auto;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+.top {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.top h1 {
+  font-size: 1.8em;
+  color: #1898a8;
+}
+.top h1 span {
+  color: #79b51c;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 270px;
+}
+form {
+  width: 100%;
+}
+.input-field_1 {
+  margin-bottom: 25px;
+}
+input {
+  display: block;
+  width: 96%;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 20px;
+  border-color: #8f8a8a;
+  border-style: solid;
+}
+input:focus {
+  outline-color: #79b51c;
+}
+.right {
+  padding: 10px 0 55px 0;
+  font-size: 20px;
+}
+.right a {
+  color: #8f8a8a;
+  font-size: 14px;
+}
+.submit {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: #1898a8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+}
+.submit:hover {
+  color: #1898a8;
+  background-color: white;
+  border-color: #1898a8;
+}
+
+.container {
+  position: relative;
+}
+
+#notification {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  background-color: #fff;
+  border: 2px solid #1898a8;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#notification-title {
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1898a8;
+}
+
+#notification-message {
+  padding: 20px 5px;
+  color: #79b51c;
+  text-align: center;
+}
+
+/* Tablette */
+
+@media screen and (max-width: 985px) {
+  .box {
+    width: 80%;
+  }
+}
+
+/* Tablette */
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+}
+
+/* Mobile */
